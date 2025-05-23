@@ -64,3 +64,10 @@ export function fetchVerify<T>(token: string) {
     data: { token },
   })
 }
+
+export function submitAuth<T>(data: { username: string; password: string }) {
+  return post<T>({
+    url: '/auth',
+    data: { data },
+  })
+}
