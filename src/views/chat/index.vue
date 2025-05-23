@@ -459,7 +459,7 @@ onUnmounted(() => {
 })
 
 // 添加这两个状态
-const showAuthForm = ref(true) // 控制表单切换
+const showAuthForm = ref(false) // 控制表单切换
 const authForm = ref({ username: '', password: '' })
 
 const handleAuth = async () => {
